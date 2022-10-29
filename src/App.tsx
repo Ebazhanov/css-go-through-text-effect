@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-      <div className="text"><h1>Enjoy</h1>
+    <div className="text">
+      <h1>CSS EFFECT</h1>
     </div>
   );
 }

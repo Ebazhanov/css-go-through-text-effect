@@ -1,21 +1,34 @@
 .text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    color: black;
-    font-size: 5vw;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    mix-blend-mode: screen;
-    transition: 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 4vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  mix-blend-mode: screen;
+  transition: 0.9s;
+  backdrop-filter: brightness(80%);
+  animation: animatime 5s infinite;
 }
 
 .text:hover {
-    transform: translate(-50%, -50%) scale(100);
-    backdrop-filter: brightness(100%);
+  transform: translate(-50%, -50%) scale(190);
+  backdrop-filter: brightness(100%);
+}
+
+@keyframes animatime {
+  from{
+    transform: translate(-50%, -50%) scale(1);
+    backdrop-filter: brightness(80%) hue-rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(250);
+    backdrop-filter: brightness(100%) hue-rotate(720deg);
+  }
 }
