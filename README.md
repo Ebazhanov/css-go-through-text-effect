@@ -1,6 +1,6 @@
 # CSS effect: Go through text by hover it.
 
-#### Enable hover effect: disable animation: 
+#### Don't forget to enable hover effect by disabling infinite animation: 
 
 ```css
 .text {
